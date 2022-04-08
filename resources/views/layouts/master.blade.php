@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Opatix - Admin & Dashboard Template</title>
+    <title>Gnorizon | @yield('title', 'Dashboard')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="MyraStudio" name="author" />
@@ -12,10 +12,16 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
+    <!-- Plugins css -->
+    <link href="https://myrathemes.com/opatix/layouts/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="https://myrathemes.com/opatix/layouts/plugins/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="https://myrathemes.com/opatix/layouts/plugins/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="https://myrathemes.com/opatix/layouts/plugins/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css" />
     <!-- App css -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/css/theme.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="https://myrathemes.com/opatix/layouts/vertical/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://myrathemes.com/opatix/layouts/vertical/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://myrathemes.com/opatix/layouts/vertical/assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -30,7 +36,7 @@
 
                 <div class="navbar-brand-box">
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo-dark.png" alt="logo-dark" />
+                        <img src="https://myrathemes.com/opatix/layouts/vertical/assets/images/logo-dark.png" alt="logo-dark" />
                     </a>
                 </div>
 
@@ -45,9 +51,14 @@
                         <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="bx bxs-eraser"></i><span>Manage</span></a>
                             <ul class="sub-menu" aria-expanded="false">
+                                <hr>
                                 <li><a href="#">Students</a></li>
                                 <li><a href="#">Staffs</a></li>
                                 <li><a href="#">Admins</a></li>
+                                <hr>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Lectures</a></li>
+                                <hr>
                             </ul>
                         </li>
                         <li><a href="#" class="waves-effect"><i class="bx bx-table"></i><span>Results</span></a></li>
@@ -79,20 +90,19 @@
                             <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
                         </button>
                         <div class="dropdown-menu">
-
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                Add new Student
+                                User
                             </a>
 
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                Add new Staff
+                                Course
                             </a>
 
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                Add new Admin
+                                Lecture
                             </a>
                         </div>
                     </div>
@@ -102,7 +112,7 @@
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="" src="assets/images/flags/us.jpg" alt="Header Language" height="16">
+                            <img class="" src="https://myrathemes.com/opatix/layouts/vertical/assets/images/flags/us.jpg" alt="Header Language" height="16">
                             <span class="d-none d-sm-inline-block ml-1">English</span>
                         </button>
                     </div>
@@ -123,7 +133,7 @@
                             <div data-simplebar style="max-height: 230px;">
                                 <a href="#" class="text-reset notification-item">
                                     <div class="media">
-                                        <img src="assets/images/users/avatar-5.jpg"
+                                        <img src="https://myrathemes.com/opatix/layouts/vertical/assets/images/users/avatar-5.jpg"
                                             class="mr-3 rounded-circle avatar-xs" alt="user-pic">
                                         <div class="media-body">
                                             <h6 class="mt-0 mb-1">Samuel Coverdale</h6>
@@ -151,7 +161,7 @@
                                 </a>
                                 <a href="#" class="text-reset notification-item">
                                     <div class="media">
-                                        <img src="assets/images/users/avatar-8.jpg"
+                                        <img src="https://myrathemes.com/opatix/layouts/vertical/assets/images/users/avatar-8.jpg"
                                             class="mr-3 rounded-circle avatar-xs" alt="user-pic">
                                         <div class="media-body">
                                             <h6 class="mt-0 mb-1">Victoria Mendis</h6>
@@ -173,7 +183,7 @@
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown-2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                            <img class="rounded-circle header-profile-user" src="https://myrathemes.com/opatix/layouts/vertical/assets/images/users/avatar-1.jpg"
                                 alt="Header Avatar">
                             <span class="d-none d-sm-inline-block ml-1">Jamie D.</span>
                             <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
@@ -246,11 +256,11 @@
 
 
     <!-- jQuery  -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/metismenu.min.js"></script>
-    <script src="assets/js/waves.js"></script>
-    <script src="assets/js/simplebar.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/vertical/assets/js/jquery.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/vertical/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/vertical/assets/js/metismenu.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/vertical/assets/js/waves.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/vertical/assets/js/simplebar.min.js"></script>
 
     <!-- Morris Js-->
     <script src="https://myrathemes.com/opatix/layouts/plugins/morris-js/morris.min.js"></script>
@@ -261,7 +271,27 @@
     <script src="assets/pages/dashboard-demo.js"></script>
 
     <!-- App js -->
-    <script src="assets/js/theme.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/vertical/assets/js/theme.js"></script>
 
+
+    <!-- Results  -->
+    <!-- third party js -->
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/dataTables.bootstrap4.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/buttons.html5.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/buttons.flash.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/buttons.print.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/dataTables.keyTable.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/dataTables.select.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/pdfmake.min.js"></script>
+    <script src="https://myrathemes.com/opatix/layouts/plugins/datatables/vfs_fonts.js"></script>
+    <!-- third party js ends -->
+    <!-- Datatables init -->
+    <script src="https://myrathemes.com/opatix/layouts/vertical/assets/pages/datatables-demo.js"></script>
+    <!-- end result -->
 </body>
 </html>

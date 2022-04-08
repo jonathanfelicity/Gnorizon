@@ -29,8 +29,7 @@
                                         </span>
                                     </div>
                                     <h6 class="text-muted text-uppercase mt-0">Students</h6>
-                                    <h3 class="my-3">$85,365</h3>
-                                    <span class="badge badge-soft-primary mr-1"> -29% </span> <span class="text-muted">This Month</span>
+                                    <h3 class="my-3">65</h3>
                                 </div>
                             </div>
                         </div>
@@ -44,8 +43,7 @@
                                         </span>
                                     </div>
                                     <h6 class="text-muted text-uppercase mt-0">Lecturer</h6>
-                                    <h3 class="my-3">$<span data-plugin="counterup">9.94</span></h3>
-                                    <span class="badge badge-soft-primary mr-1"> 0% </span> <span class="text-muted">This Month</span>
+                                    <h3 class="my-3">$<span data-plugin="counterup">94</span></h3>
                                 </div>
                             </div>
                         </div>
@@ -59,9 +57,8 @@
                                         </span>
                                     </div>
                                     <h6 class="text-muted text-uppercase mt-0">Admins </h6>
-                                    <h3 class="my-3" data-plugin="counterup">5,842</h3>
-                                    <span class="badge badge-soft-primary mr-1"> +89% </span> <span class="text-muted">This Month</span>
-                                </div>
+                                    <h3 class="my-3" data-plugin="counterup">2</h3>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -88,7 +85,7 @@
                                     <div data-simplebar style="max-height: 380px;">
                                         <a href="#" class="d-flex align-items-center border-bottom py-3">
                                             <div class="mr-3">
-                                                <img src="assets/images/users/avatar-2.jpg" class="rounded-circle avatar-sm" alt="user">
+                                                <img src="https://myrathemes.com/opatix/layouts/vertical/assets/images/users/avatar-2.jpg" class="rounded-circle avatar-sm" alt="user">
                                             </div>
                                             <div class="w-100">
                                                 <div class="d-flex justify-content-between">
@@ -101,7 +98,7 @@
     
                                         <a href="#" class="d-flex align-items-center border-bottom py-3">
                                             <div class="mr-3">
-                                                <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user">
+                                                <img src="https://myrathemes.com/opatix/layouts/vertical/assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user">
                                             </div>
                                             <div class="w-100">
                                                 <div class="d-flex justify-content-between">
@@ -114,7 +111,7 @@
     
                                         <a href="#" class="d-flex align-items-center border-bottom py-3">
                                             <div class="mr-3">
-                                                <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-sm" alt="user">
+                                                <img src="https://myrathemes.com/opatix/layouts/vertical/assets/images/users/avatar-4.jpg" class="rounded-circle avatar-sm" alt="user">
                                             </div>
                                             <div class="w-100">
                                                 <div class="d-flex justify-content-between">
@@ -127,7 +124,7 @@
     
                                         <a href="#" class="d-flex align-items-center border-bottom py-3">
                                             <div class="mr-3">
-                                                <img src="assets/images/users/avatar-5.jpg" class="rounded-circle avatar-sm" alt="user">
+                                                <img src="https://myrathemes.com/opatix/layouts/vertical/assets/images/users/avatar-5.jpg" class="rounded-circle avatar-sm" alt="user">
                                             </div>
                                             <div class="w-100">
                                                 <div class="d-flex justify-content-between">
@@ -140,7 +137,7 @@
     
                                         <a href="#" class="d-flex align-items-center border-bottom py-3">
                                             <div class="mr-3">
-                                                <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm" alt="user">
+                                                <img src="https://myrathemes.com/opatix/layouts/vertical/assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm" alt="user">
                                             </div>
                                             <div class="w-100">
                                                 <div class="d-flex justify-content-between">
@@ -172,18 +169,17 @@
                                             <li><a href="#" class="dropdown-item">Separated link</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="card-title d-inline-block">Students</h4>
+                                    <h4 class="card-title d-inline-block">Courses</h4>
 
                                     <div class="table-responsive">
                                         <table class="table table-borderless table-hover mb-0">
                                             <thead class="thead-light">
                                                 <tr>
                                                     <th>No</th>
-                                                    <th>Project Name</th>
-                                                    <th>Client Name</th>
-                                                    <th>Deadline</th>
-                                                    <th>Income</th>
-                                                    <th>Status</th>
+                                                    <th>Course Name</th>
+                                                    <th>Course Code</th>
+                                                    <th>Unit</th>
+
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -192,64 +188,48 @@
                                                     <td>App design and development</td>
                                                     <td>Arthur Powell</td>
                                                     <td>Sun, 08/10</td>
-                                                    <td>$8,532</td>
-                                                    <td class="text-warning">In Process</td>
                                                 </tr>
                                                 <tr>
                                                     <th>2</th>
                                                     <td>Coffee detail page - Main Page</td>
                                                     <td>Joan Lennox</td>
                                                     <td>Fri, 17/10</td>
-                                                    <td>$5,350</td>
-                                                    <td class="text-success">Done</td>
                                                 </tr>
                                                 <tr>
                                                     <th>3</th>
                                                     <td>Poster illustation design</td>
                                                     <td>Ronald Roesler</td>
                                                     <td>Tue, 13/08</td>
-                                                    <td>$2,250</td>
-                                                    <td class="text-danger">Hold</td>
                                                 </tr>
                                                 <tr>
                                                     <th>4</th>
                                                     <td>Drinking bottle graphics</td>
                                                     <td>Mickey Cochran</td>
                                                     <td>Mon, 10/08</td>
-                                                    <td>$4,532</td>
-                                                    <td class="text-success">Done</td>
                                                 </tr>
                                                 <tr>
                                                     <th>5</th>
                                                     <td>Landing page design - Home</td>
                                                     <td>Barry Trahan</td>
                                                     <td>Thus, 03/09</td>
-                                                    <td>$1,555</td>
-                                                    <td class="text-warning">In Process</td>
                                                 </tr>
                                                 <tr>
                                                     <th>6</th>
                                                     <td>Company logo design</td>
                                                     <td>James Grimes</td>
                                                     <td>Sat, 07/19</td>
-                                                    <td>$9,352</td>
-                                                    <td class="text-success">Done</td>
                                                 </tr>
                                                 <tr>
                                                     <th>7</th>
                                                     <td>Product page redesign</td>
                                                     <td>Philip Jetton</td>
                                                     <td>Wed, 09/08</td>
-                                                    <td>$6,895</td>
-                                                    <td class="text-danger">Hold</td>
                                                 </tr>
                                                 <tr>
                                                     <th>8</th>
                                                     <td>Hero page - Main Page</td>
                                                     <td>Amanda Salinas</td>
                                                     <td>Sun, 02/20</td>
-                                                    <td>$3,895</td>
-                                                    <td class="text-success">Done</td>
                                                 </tr>
                                                 
                                             </tbody>

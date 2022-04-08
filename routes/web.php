@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin.staff');
+
+
+// Authentication
+Route::match(['post', 'get'], '/', [AuthController::class, 'handleTokenizer']);
+Route::match(['post', 'get'], '/login', [AuthController::class, 'handleLogin']);
+
+
+
+// Dashboard Routees
+
+// Student
+Route::match(['post', 'get'], '/students', function(){
+    return view('admin.students');
 });
+
+// Dashbord 
+Route::match(['post', 'get'], '/dashboard', function(){
+    return view('admin.dashboard');
+});
+
+// Users
+Route::match(['post', 'get'], '/user', [UserController::class, 'handleUser']);
+
+Route::view('/result', 'admin.result');

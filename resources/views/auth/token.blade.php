@@ -15,24 +15,17 @@
                                                     <span><img src="assets/images/logo-dark.png" alt="" height="26"></span>
                                                 </a>
                                             </div>
-                                            <form action="/" class="p-2">
+                                            <div class="text-center">
+                                                <p class="text-muted w-75 mx-auto"> Enter your school email address and we'll send you an email with acess token. </p>
+                                            </div>
+                                            <form method="post" class="p-2">
+                                                @csrf
                                                 <div class="form-group">
                                                     <label for="emailaddress">Email address</label>
-                                                    <input class="form-control" type="email" id="emailaddress" required="" placeholder="john@deo.com">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="password">Password</label>
-                                                    <input class="form-control" type="password" required="" id="password" placeholder="Enter your access token">
-                                                </div>
-            
-                                                <div class="form-group mb-4 pb-3">
-                                                    <div class="custom-control custom-checkbox checkbox-primary">
-                                                        <input type="checkbox" class="custom-control-input" id="checkbox-signin">
-                                                        <label class="custom-control-label" for="checkbox-signin">Remember me</label>
-                                                    </div>
+                                                    <input class="form-control" type="email" id="emailaddress" required=""  name="email" placeholder="john@deo.com">
                                                 </div>
                                                 <div class="mb-3 text-center">
-                                                    <button class="btn btn-primary btn-block" type="submit"> Log In </button>
+                                                    <button class="btn btn-primary btn-block" type="submit"> Generate Login Token </button>
                                                 </div>
                                             </form>
                                         </div>
@@ -42,7 +35,7 @@
             
                                     <div class="row mt-4">
                                         <div class="col-sm-12 text-center">
-                                            <p class="text-white-50 mb-0"><a href="/" class="text-white-50 ml-1"><b>Generate new token</b></a></p>
+                                            <p class="text-white-50 mb-0"><a href="/login" class="text-white-50 ml-1"><b>Already have a token.</b></a></p>
                                         </div>
                                     </div>
             
