@@ -23,7 +23,7 @@ Route::match(['post', 'get'], '/', [AuthController::class, 'handleTokenizer']);
 Route::match(['post', 'get'], '/login', [AuthController::class, 'handleLogin']);
 
 // Mailer 
-Route::match(['post', 'get'], '/mail', [MailController::class, 'handleMail']);
+Route::match(['post', 'get'], '/mail/{mail}/{token}', [MailController::class, 'handleMail'])->name('mail');
 
 // Dashboard Routees
 

@@ -9,8 +9,8 @@ use App\Mail\TokenMail;
 
 class MailController extends Controller
 {
-    public function handleMail(){
-        // $user = 'jonathanfelicity@mail.com';
-        Mail::to('jonathanfelicity@mail.com')->send(new TokenMail());
+    public function handleMail($mail, $token){
+        Mail::to($mail)->send(new TokenMail($mail, $token));
+        return redirect('/login');
     }
 }

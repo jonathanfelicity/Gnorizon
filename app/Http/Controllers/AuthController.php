@@ -8,10 +8,10 @@ use Illuminate\Support\Str;
 
 
 use DB;
-use Mail;
 
 class AuthController extends Controller
 {
+    // Authenticating user
     public function handleLogin(Request $request){
         if ($request->isMethod('post')) {
             $email = $request->email;
@@ -20,8 +20,13 @@ class AuthController extends Controller
             if ($user) {
                 $hashedToken = DB::table('users')->where('email', $email)->value('token'); 
                 if (Hash::check($token, $hashedToken)) {
-                    $request->session()->put('user', $email);
-                    echo session('user');
+                    try {
+                        $request->session()->put('user', $email);
+                        return redirect('/dashboard');
+                    } catch (Exception $e) {
+                        return "Error setting session ".$e;
+                    }
+                    
                 }else{
                     return 'Invalid password';
                 }
@@ -32,6 +37,7 @@ class AuthController extends Controller
         return view('auth.login');
     }
 
+    // Generating token and sending it to the user mail
     public function handleTokenizer(Request $request){
         if ($request->isMethod('post')) {
             $email = $request->email;
@@ -40,9 +46,9 @@ class AuthController extends Controller
             DB::table('users')
             ->where('email', $email)
             ->update([
-                'token'     => Hash::make($token)
+                'token' => Hash::make($token)
             ]);
-           return redirect('/login');
+            return redirect()->route('mail', ['mail' => $email, 'token'=>$token]);
         }
         return view('auth.token');
     }

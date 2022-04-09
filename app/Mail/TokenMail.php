@@ -11,14 +11,20 @@ class TokenMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $mail;
+    public $token;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+
+
+    public function __construct($mail, $token)
     {
-        //
+        $this->mail = $mail;
+        $this->token = $token;
     }
 
     /**
