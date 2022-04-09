@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,8 @@ use App\Http\Controllers\UserController;
 Route::match(['post', 'get'], '/', [AuthController::class, 'handleTokenizer']);
 Route::match(['post', 'get'], '/login', [AuthController::class, 'handleLogin']);
 
-
+// Mailer 
+Route::match(['post', 'get'], '/mail', [MailController::class, 'handleMail']);
 
 // Dashboard Routees
 

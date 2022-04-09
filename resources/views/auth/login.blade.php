@@ -15,14 +15,15 @@
                                                     <span><img src="assets/images/logo-dark.png" alt="" height="26"></span>
                                                 </a>
                                             </div>
-                                            <form action="/" class="p-2">
+                                            <form method="post" class="p-2">
+                                            @csrf
                                                 <div class="form-group">
                                                     <label for="emailaddress">Email address</label>
-                                                    <input class="form-control" type="email" id="emailaddress" required="" placeholder="john@deo.com">
+                                                    <input class="form-control" type="email" id="emailaddress" name="email" required="" placeholder="john@deo.com">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="password">Password</label>
-                                                    <input class="form-control" type="password" required="" id="password" placeholder="Enter your access token">
+                                                    <label for="password">Access token</label>
+                                                    <input class="form-control" type="password" required="" id="password" name="token" placeholder="Enter your access token">
                                                 </div>
             
                                                 <div class="form-group mb-4 pb-3">

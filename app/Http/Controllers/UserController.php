@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Models\User;
 
 class UserController extends Controller
 {
+// Adding new user to database    
     public function handleUser(Request $request){
         if ($request->isMethod('post')) {
             $user = new User;
